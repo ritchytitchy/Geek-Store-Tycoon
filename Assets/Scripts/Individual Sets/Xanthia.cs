@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Xanthia : MonoBehaviour
 {
-    string[] xanthiaset = new string[] { "Sword", "Warrior", "Dagger", "Staff", "Cloak", "Gold", "HP Potion", "Mana Potion", "Shield", "Dragon", "Goblin", };
-    int[] xanthiacollection = new int[11];
+    static string[] xanthiaset = new string[] { "Sword", "Warrior", "Dagger", "Staff", "Cloak", "Gold", "HP Potion", "Mana Potion", "Shield", "Dragon", "Goblin", };
+     static int[] xanthiacollection = new int[11];
     
-    public void OpenPack()
+    public static void OpenPack()
     {
-        MoneyGlobal.Money -= 5;
         int cardopened = Random.Range(0, xanthiacollection.Length);
-        Debug.Log(cardopened);
         Debug.Log(xanthiaset[cardopened]);
         xanthiacollection[cardopened] += 1;
         Debug.Log(xanthiacollection[cardopened]);
