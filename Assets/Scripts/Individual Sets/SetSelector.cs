@@ -7,11 +7,11 @@ using TMPro;
 public class SetSelector : MonoBehaviour
 {
     public GameObject SelectedSet;
-    string[] sets = new string[] { "Xanthia", "Witches & Warlocks"};
+    string[] sets = new string[] { "Xanthia", "Witches & Warlocks", "Toof"};
     public static int currentset = 0;
     public void NextSelection()
     {
-        if (currentset >= 1)
+        if (currentset >= 2)
     { 
             currentset = 0;
     }
@@ -45,6 +45,11 @@ public class SetSelector : MonoBehaviour
         {
 
             WitchesWarlocks.OpenPack();
+        }
+        if (currentset == 2)
+        {
+
+            Toof.OpenPack();
         }
         else
         {
