@@ -7,7 +7,7 @@ using TMPro;
 public class SetSelector : MonoBehaviour
 {
     public GameObject SelectedSet;
-    string[] sets = new string[] { "Xanthia", "Witches & Warlocks", "Toof"};
+    public string[] sets = new string[] { "Xanthia", "Witches & Warlocks", "Toof"};
     public static int currentset = 0;
     public void NextSelection()
     {
