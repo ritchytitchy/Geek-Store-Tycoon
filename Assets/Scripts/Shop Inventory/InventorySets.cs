@@ -15,7 +15,7 @@ public class InventorySets : MonoBehaviour
 
         public void InitializeInventoryUI(int inventorysize)
     {
-        for (int i = 0; i < inventorysize; i++)
+        for (public int i = 0; i < inventorysize; i++)
         {
             InventoryItem uiItem =
                 Instantiate(inventorybuy, Vector3.zero, Quaternion.identity);
@@ -27,7 +27,6 @@ public class InventorySets : MonoBehaviour
               uiItem.OnItemEndDrag += HandleEndDrag;
               uiItem.OnRightMouseBtnClick += HandleShowItemActions; */
         }
-    }
 
 
       // Update is called once per frame
@@ -49,4 +48,4 @@ public class InventorySets : MonoBehaviour
                 Debug.Log("Sets have been spawned");
             }
         } */
-        }
+        
