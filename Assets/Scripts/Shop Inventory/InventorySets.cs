@@ -10,23 +10,35 @@ public class InventorySets : MonoBehaviour
 
         public List<InventoryItem> inventorygrid = new List<InventoryItem>();
     [SerializeField] private InventoryItem inventorybuy;
-        SetSelector setselector;
+        InventoryItem inventoryitem;
     [SerializeField] private RectTransform contentPanel;
-
-        public void InitializeInventoryUI(int inventorysize)
+    SetSelector setselector;
+    public GameObject SelectedSet;
+    public void InitializeInventoryUI(int inventorysize)
     {
-        for (public int i = 0; i < inventorysize; i++)
+        for (int i = 0; i < inventorysize; i++)
         {
             InventoryItem uiItem =
                 Instantiate(inventorybuy, Vector3.zero, Quaternion.identity);
             uiItem.transform.SetParent(contentPanel);
             inventorygrid.Add(uiItem);
+         //   settext(i);
+          //  
             /*  uiItem.OnItemClicked += HandleItemSelection;
               uiItem.OnItemBeginDrag += HandleBeginDrag;
               uiItem.OnItemDroppedOn += HandleSwap;
               uiItem.OnItemEndDrag += HandleEndDrag;
               uiItem.OnRightMouseBtnClick += HandleShowItemActions; */
         }
+
+        void settext(int x)
+        {
+            SelectedSet.GetComponent<TextMeshProUGUI>().text = setselector.sets[x];
+        }
+
+
+    }
+}
 
 
       // Update is called once per frame
