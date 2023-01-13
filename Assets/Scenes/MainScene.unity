@@ -340,10 +340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2824ec31d6634b4cb76ef0551afbb5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorygrid: []
-  inventorybuy: {fileID: 7490448009054904087, guid: 94c56a4e55ab5b34989ba0c76228e2b2, type: 3}
+  inventorygrid:
+  - {fileID: 3901030806296038001, guid: 71b824c292a319c4f90fd3d994fbe412, type: 3}
+  - {fileID: 3901030806296038001, guid: c8d5b3e1ada1d684ca21f8bd0758b906, type: 3}
+  - {fileID: 3901030806296038001, guid: f58808dce5b7986489c4af99b1dea363, type: 3}
   contentPanel: {fileID: 1168561534}
-  SelectedSet: {fileID: 1553516492981622901, guid: 7f7bbc80c49d62c42ace3fc260b0d84f, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,8 +881,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1600896436}
   - {fileID: 1213061028}
+  - {fileID: 1600896436}
   - {fileID: 2010211874}
   - {fileID: 1256435633}
   - {fileID: 1673975886}
@@ -1745,7 +1746,7 @@ RectTransform:
   - {fileID: 2012302001}
   - {fileID: 1068301007}
   m_Father: {fileID: 651941044}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2523,7 +2524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 429245755}
-  inventorySize: 4
+  inventorySize: 3
 --- !u!1 &2012302000 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1553516492981622901, guid: 7f7bbc80c49d62c42ace3fc260b0d84f, type: 3}
