@@ -51,10 +51,6 @@ public class SetSelector : MonoBehaviour
 
             Toof.OpenPack();
         }
-        else
-        {
-            Debug.Log("Borked");
-        }
     }
 
     // Update is called once per frame
